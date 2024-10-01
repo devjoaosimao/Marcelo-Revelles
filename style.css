@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+#sobre img {
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 150px;
+    right: 20px;
+}
+
+
+.main-header {
+    background-color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #6e4428;
+}
+
+section {
+    padding: 60px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Títulos */
+h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #6f4e37;
+}
+
+h4 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #6f4e37;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Benefícios Section */
+#beneficios article {
+    margin-bottom: 40px;
+}
+
+#beneficios h4 {
+    font-size: 1.8em;
+    color: #6f4e37;
+}
+
+#beneficios p {
+    max-width: 800px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Contato Section */
+#contato p a {
+    color: #6f4e37;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+#contato p a:hover {
+    color: #b89d85;
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: auto;
+}
+
+.whatsapp-icon img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    font-size: 13px;
+    justify-content: center;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+footer p {
+    padding-top: 15px;
+}
+
+
+.benefits-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.benefits-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.benefits-section .highlight {
+    color: #a19d8b;
+}
+
+.benefits-section p {
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.benefit-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px; 
+    min-height: 160px;
+    margin-bottom: 30px;
+}
+
+.benefit-box.small-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    
+}
+
+.benefit-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.benefit-box p {
+    font-size: 14px;
+}
+
+.benefit-box.large {
+    flex: 1;
+    max-width: 350px; 
+    min-height: 400px;
+}
+
+.benefit-box.large ul {
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+}
+
+.benefit-box.large ul li {
+    margin-bottom: 8px; 
+    font-size: 14px;
+}
+
+.cta-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+    text-decoration: none; 
+}
+
+.cta-button a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.cta-button a:hover {
+    color: #fff; 
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 15px;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    p, ul li {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        max-height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sobre img {
+        position: static;
+        margin: 0 auto;
+        display: block;
+        width: 150px;
+    }
+}
