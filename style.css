@@ -37,7 +37,7 @@ body {
 }
 
 .logo img {
-    max-height: 60px;
+    max-height: 65px;
 }
 
 header nav ul {
@@ -64,7 +64,7 @@ section {
     text-align: left;
 }
 
-/* Títulos */
+
 h3 {
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -96,7 +96,7 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Benefícios Section */
+
 #beneficios article {
     margin-bottom: 40px;
 }
@@ -112,7 +112,7 @@ ul li {
     color: #444;
 }
 
-/* Contato Section */
+
 #contato p a {
     color: #6f4e37;
     text-decoration: none;
@@ -124,7 +124,7 @@ ul li {
     color: #b89d85;
 }
 
-/* WhatsApp Icon */
+
 .whatsapp-icon {
     position: fixed;
     bottom: 25px;
@@ -153,6 +153,13 @@ footer p {
     padding-top: 15px;
 }
 
+.benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; 
+}
 
 .benefits-section {
     padding: 40px;
@@ -187,9 +194,15 @@ footer p {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    width: 280px; 
+    width: 280px;
     min-height: 160px;
     margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .benefit-box.small-container {
